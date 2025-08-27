@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhong Kui - The Demon Queller</title>
+  <style>
+    body {
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 2.2rem; }
+    header p { font-size: 1rem; margin-top: 0.5rem; color: #dcdde1; }
+
+    nav {
+      background: #34495e;
+      padding: 0.5rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .lang-flags {
+      display: inline-flex;
+      gap: 10px;
+      margin-left: 20px;
+      vertical-align: middle;
+    }
+    .lang-flags img {
+      width: 28px;
+      height: 20px;
+      cursor: pointer;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+    }
+    .lang-flags img:hover { transform: scale(1.1); box-shadow: 0 0 5px rgba(0,0,0,0.3); }
+    .lang-flags img.active { border: 2px solid #e74c3c; box-shadow: 0 0 8px rgba(231,76,60,0.8); transform: scale(1.15); }
+
+    main { max-width: 900px; margin: auto; padding: 2rem 1rem; }
+    section { margin-bottom: 2rem; }
+    section h2 {
+      border-left: 5px solid #e74c3c;
+      padding-left: 10px;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: #c0392b;
+    }
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    /* 淡入淡出效果 */
+    .fade { opacity: 0; transition: opacity 0.5s ease-in-out; }
+    .fade.show { opacity: 1; }
+
+    img.hero { display: block; max-width: 100%; margin: 1rem auto; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="title">Zhong Kui</h1>
+    <p id="subtitle">The Legendary Demon Queller in Chinese Folklore</p>
+  </header>
+
+  <nav>
+    <a href="#about" id="nav-about">About Zhong Kui</a>
+    <a href="#culture" id="nav-culture">Cultural Significance</a>
+    <a href="#legends" id="nav-legends">Legends</a>
+    <a href="#gallery" id="nav-gallery">Gallery</a>
+    <div class="lang-flags">
+      <img src="https://flagcdn.com/us.svg" data-lang="en" alt="English" title="English">
+      <img src="https://flagcdn.com/cn.svg" data-lang="zh" alt="中文" title="中文">
+      <img src="https://flagcdn.com/jp.svg" data-lang="ja" alt="日本語" title="日本語">
+      <img src="https://flagcdn.com/es.svg" data-lang="es" alt="Español" title="Español">
+    </div>
+  </nav>
+
+  <main class="fade">
+    <section id="about">
+      <h2 id="about-title">About Zhong Kui</h2>
+      <p id="about-text">
+        Zhong Kui (钟馗) is a legendary figure in Chinese folklore, often recognized as
+        the "Demon Queller." He is believed to have the power to capture and command
+        ghosts and evil spirits, protecting people from harm.
+      </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Zhongkui01.jpg/400px-Zhongkui01.jpg" 
+           alt="Zhong Kui image" class="hero">
+    </section>
+
+    <section id="culture">
+      <h2 id="culture-title">Cultural Significance</h2>
+      <p id="culture-text">
+        In Chinese tradition, Zhong Kui is regarded as a symbol of justice and protection.
+        His image is often placed on household doors during festivals to ward off evil spirits
+        and bring peace to the family.
+      </p>
+    </section>
+
+    <section id="legends">
+      <h2 id="legends-title">Legends</h2>
+      <p id="legends-text">
+        According to legend, Zhong Kui was a brilliant scholar who failed the imperial examination
+        because of his appearance. After his death, he was appointed by the Underworld Emperor to
+        capture demons and protect humanity.
+      </p>
+    </section>
+
+    <section id="gallery">
+      <h2 id="gallery-title">Gallery</h2>
+      <p id="gallery-text">Here you will find traditional paintings and artworks of Zhong Kui.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p id="footer-text">© 2025 Zhongkui.site | A cultural project to introduce Zhong Kui to the world</p>
+  </footer>
+
+  <script>
+    const translations = {
+      en: {
+        title: "Zhong Kui",
+        subtitle: "The Legendary Demon Queller in Chinese Folklore",
+        nav: { about: "About Zhong Kui", culture: "Cultural Significance", legends: "Legends", gallery: "Gallery" },
+        about: { title: "About Zhong Kui", text: "Zhong Kui (钟馗) is a legendary figure in Chinese folklore, often recognized as the 'Demon Queller.' He is believed to have the power to capture and command ghosts and evil spirits, protecting people from harm." },
+        culture: { title: "Cultural Significance", text: "In Chinese tradition, Zhong Kui is regarded as a symbol of justice and protection. His image is often placed on household doors during festivals to ward off evil spirits and bring peace to the family." },
+        legends: { title: "Legends", text: "According to legend, Zhong Kui was a brilliant scholar who failed the imperial examination because of his appearance. After his death, he was appointed by the Underworld Emperor to capture demons and protect humanity." },
+        gallery: { title: "Gallery", text: "Here you will find traditional paintings and artworks of Zhong Kui." },
+        footer: "© 2025 Zhongkui.site | A cultural project to introduce Zhong Kui to the world"
+      },
+      zh: {
+        title: "钟馗",
+        subtitle: "中国民间传说中的捉鬼大神",
+        nav: { about: "关于钟馗", culture: "文化意义", legends: "传说故事", gallery: "画廊" },
+        about: { title: "关于钟馗", text: "钟馗是中国民间传说中的人物，被尊为“捉鬼大神”。据说他能驱使鬼怪，保护人们免受邪祟侵扰。" },
+        culture: { title: "文化意义", text: "在中国传统中，钟馗象征正义与守护。他的画像常被贴在节日的门上，以辟邪安宅。" },
+        legends: { title: "传说故事", text: "相传钟馗学识渊博，却因貌丑落第。死后被冥王任命为鬼王，专门捉鬼驱邪，护佑人间。" },
+        gallery: { title: "画廊", text: "这里展示钟馗的传统绘画与艺术作品。" },
+        footer: "© 2025 Zhongkui.site | 一个向世界介绍钟馗文化的项目"
+      },
+      ja: {
+        title: "鍾馗（しょうき）",
+        subtitle: "中国の民間伝説における鬼を退治する神",
+        nav: { about: "鍾馗について", culture: "文化的意義", legends: "伝説", gallery: "ギャラリー" },
+        about: { title: "鍾馗について", text: "鍾馗は中国の民間伝説に登場する人物で、「鬼を退治する神」として知られています。悪霊を捕らえ、人々を守る力を持つと信じられています。" },
+        culture: { title: "文化的意義", text: "中国の伝統では、鍾馗は正義と守護の象徴とされています。彼の絵は祭りの時に家の門に貼られ、邪悪なものを退けると信じられています。" },
+        legends: { title: "伝説", text: "伝説によれば、鍾馗は優れた学者でしたが、容姿のために科挙に落ちました。死後、冥界の皇帝により鬼を捕える役目を与えられました。" },
+        gallery: { title: "ギャラリー", text: "鍾馗に関する伝統的な絵画や芸術作品をご覧ください。" },
+        footer: "© 2025 Zhongkui.site | 世界に鍾馗文化を紹介するプロジェクト"
+      },
+      es: {
+        title: "Zhong Kui",
+        subtitle: "El legendario cazador de demonios en el folclore chino",
+        nav: { about: "Sobre Zhong Kui", culture: "Significado Cultural", legends: "Leyendas", gallery: "Galería" },
+        about: { title: "Sobre Zhong Kui", text: "Zhong Kui es una figura legendaria del folclore chino, conocido como el 'Cazador de Demonios'. Se cree que tiene el poder de capturar y controlar a los espíritus malignos." },
+        culture: { title: "Significado Cultural", text: "En la tradición china, Zhong Kui simboliza la justicia y la protección. Su imagen suele colocarse en las puertas durante los festivales para ahuyentar a los espíritus malignos." },
+        legends: { title: "Leyendas", text: "Según la leyenda, Zhong Kui fue un erudito brillante que fracasó en los exámenes imperiales debido a su apariencia. Tras su muerte, fue designado por el Emperador del Inframundo para capturar demonios y proteger a la humanidad." },
+        gallery: { title: "Galería", text: "Aquí encontrarás pinturas y obras de arte tradicionales de Zhong Kui." },
+        footer: "© 2025 Zhongkui.site | Un proyecto cultural para presentar a Zhong Kui al mundo"
+      }
+    };
+
+    function setLanguage(lang) {
+      const main = document.querySelector("main");
+      main.classList.remove("show"); // 淡出效果
+
+      setTimeout(() => {
+        const t = translations[lang] || translations["en"];
+        document.getElementById("title").textContent = t.title;
+        document.getElementById("subtitle").textContent = t.subtitle;
+
+        document.getElementById("nav-about").textContent = t.nav.about;
+        document.getElementById("nav-culture").textContent = t.nav.culture;
+        document.getElementById("nav-legends").textContent = t.nav.legends;
+        document.getElementById("nav-gallery").textContent = t.nav.gallery;
+
+        document.getElementById("about-title").textContent = t.about.title;
+        document.getElementById("about-text").textContent = t.about.text;
+
+        document.getElementById("culture-title").textContent = t.culture.title;
+        document.getElementById("culture-text").textContent = t.culture.text;
+
+        document.getElementById("legends-title").textContent = t.legends.title;
+        document.getElementById("legends-text").textContent = t.legends.text;
+
+        document.getElementById("gallery-title").textContent = t.gallery.title;
+        document.getElementById("gallery-text").textContent = t.gallery.text;
+
+        document.getElementById("footer-text").textContent = t.footer;
+
+        // 保存选择
+        localStorage.setItem("preferredLang", lang);
+
+        // 更新国旗高亮
+        document.querySelectorAll(".lang-flags img").forEach(flag => {
+          flag.classList.toggle("active", flag.dataset.lang === lang);
+        });
+
+        main.classList.add("show"); // 淡入效果
+      }, 300);
+    }
+
+    // 点击国旗切换语言
+    document.querySelectorAll(".lang-flags img").forEach(flag => {
+      flag.addEventListener("click", () => {
+        setLanguage(flag.dataset.lang);
+      });
+    });
+
+    // 自动检测浏览器语言
+    function detectLanguage() {
+      const savedLang = localStorage.getItem("preferredLang");
+      if (savedLang && translations[savedLang]) return savedLang;
+
+      const browserLang = navigator.language || navigator.userLanguage;
+      if (browserLang.startsWith("zh")) return "zh";
+      if (browserLang.startsWith("ja")) return "ja";
+      if (browserLang.startsWith("es")) return "es";
+      return "en";
+    }
+
+    // 页面加载初始化
+    document.addEventListener("DOMContentLoaded", () => {
+      const main = document.querySelector("main");
+      main.classList.add("fade");
+      setLanguage(detectLanguage());
+    });
+  </script>
+</body>
+</html>
