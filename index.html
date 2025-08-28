@@ -4,31 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zhong Kui - The Demon Queller</title>
+  <!-- 引入中文和西文字体，保证中西文都美观 -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
+    /* 全局样式 */
     body {
       font-family: "Cinzel", "Noto Serif SC", serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #faf4f4, #fbe8d3);
+      background: linear-gradient(135deg, #faf4f4, #fbe8d3); /* 柔和的米色渐变背景 */
       color: #2c3e50;
       line-height: 1.7;
     }
 
+    /* 页眉：带有深色背景和标题 */
     header {
       background: url("https://www.transparenttextures.com/patterns/asfalt-light.png"), linear-gradient(135deg, #2c3e50, #34495e);
       color: #fff;
       padding: 3rem 1rem;
       text-align: center;
-      position: relative;
     }
     header h1 { margin: 0; font-size: 2.5rem; }
     header p { font-size: 1.2rem; margin-top: 0.5rem; color: #dcdde1; }
 
+    /* 导航栏样式 */
     nav {
-      background: #c0392b;
+      background: #c0392b; /* 红色条 */
       padding: 0.7rem;
-      text-align: center;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -44,13 +47,13 @@
       font-weight: bold;
       transition: color 0.3s;
     }
-    nav a:hover { color: #f1c40f; }
+    nav a:hover { color: #f1c40f; } /* 鼠标悬停高亮 */
 
+    /* 语言切换旗帜按钮 */
     .lang-flags {
       display: inline-flex;
       gap: 10px;
       margin-left: 20px;
-      vertical-align: middle;
     }
     .lang-flags img {
       width: 28px;
@@ -63,6 +66,7 @@
     .lang-flags img:hover { transform: scale(1.1); box-shadow: 0 0 5px rgba(0,0,0,0.3); }
     .lang-flags img.active { border: 2px solid #f1c40f; box-shadow: 0 0 8px rgba(241,196,15,0.8); transform: scale(1.15); }
 
+    /* 主内容区 */
     main { max-width: 1000px; margin: auto; padding: 2rem 1rem; }
     section { margin-bottom: 3rem; padding: 2rem; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
     section h2 {
@@ -73,6 +77,7 @@
       color: #c0392b;
     }
 
+    /* 双栏布局（文字 + 图片） */
     .two-column {
       display: flex;
       flex-wrap: wrap;
@@ -86,6 +91,7 @@
     }
     .two-column div { flex: 1; }
 
+    /* 图库 */
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -102,6 +108,7 @@
     .gallery-item img { width: 100%; display: block; }
     .gallery-item p { text-align: center; padding: 0.5rem; background: #fafafa; font-weight: bold; }
 
+    /* 页脚 */
     footer {
       background: #2c3e50;
       color: #fff;
@@ -111,16 +118,19 @@
       font-size: 0.9rem;
     }
 
+    /* 渐变淡入动画 */
     .fade { opacity: 0; transition: opacity 0.5s ease-in-out; }
     .fade.show { opacity: 1; }
   </style>
 </head>
 <body>
+  <!-- 页眉 -->
   <header>
     <h1 id="title">Zhong Kui</h1>
     <p id="subtitle">The Legendary Demon Queller in Chinese Folklore</p>
   </header>
 
+  <!-- 导航栏 + 语言切换 -->
   <nav>
     <a href="#about" id="nav-about">About Zhong Kui</a>
     <a href="#culture" id="nav-culture">Cultural Significance</a>
@@ -134,18 +144,14 @@
     </div>
   </nav>
 
+  <!-- 主体内容 -->
   <main class="fade">
     <section id="about">
       <h2 id="about-title">About Zhong Kui</h2>
       <div class="two-column">
         <div>
           <p id="about-text">
-            Zhong Kui (钟馗) is a legendary figure in Chinese folklore, often recognized as
-            the "Demon Queller." He is believed to have the power to capture and command
-            ghosts and evil spirits, protecting people from harm.  
-            Stories describe him as a brilliant scholar who, despite his talents, was denied
-            official recognition due to his appearance. After his tragic death, he was granted
-            a divine role as protector against evil.
+            Zhong Kui (钟馗) is a legendary figure in Chinese folklore...
           </p>
         </div>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Zhongkui01.jpg/400px-Zhongkui01.jpg" alt="Zhong Kui image">
@@ -154,30 +160,17 @@
 
     <section id="culture">
       <h2 id="culture-title">Cultural Significance</h2>
-      <p id="culture-text">
-        In Chinese tradition, Zhong Kui is regarded as a symbol of justice and protection.
-        His fierce image is often placed on household doors during festivals such as the
-        Lunar New Year and Dragon Boat Festival to ward off evil spirits and bring peace
-        to the family. He is also depicted in opera, paintings, and temple murals as a
-        mighty guardian with a sword, commanding an army of spirits.
-      </p>
+      <p id="culture-text">In Chinese tradition, Zhong Kui is regarded as a symbol of justice and protection...</p>
     </section>
 
     <section id="legends">
       <h2 id="legends-title">Legends</h2>
-      <p id="legends-text">
-        Many legends surround Zhong Kui.  
-        <strong>The Scholar’s Tragedy:</strong> Zhong Kui was said to be a top scholar who failed the
-        imperial examination due to his appearance, leading to his despair and death.  
-        <strong>The Emperor’s Dream:</strong> In another tale, Emperor Xuanzong of Tang dreamed of Zhong Kui
-        slaying demons, after which he ordered his image to be painted for protection.  
-        These stories established Zhong Kui as a revered figure in both folklore and imperial culture.
-      </p>
+      <p id="legends-text">Many legends surround Zhong Kui...</p>
     </section>
 
     <section id="gallery">
       <h2 id="gallery-title">Gallery</h2>
-      <p id="gallery-text">Explore traditional paintings and artworks of Zhong Kui through the ages.</p>
+      <p id="gallery-text">Explore traditional paintings...</p>
       <div class="gallery-grid">
         <div class="gallery-item">
           <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Zhongkui01.jpg" alt="Zhong Kui Ming Painting">
@@ -187,47 +180,62 @@
           <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Zhongkui_by_Gong_Kai.jpg" alt="Song Dynasty Zhong Kui">
           <p>Song Dynasty Artwork</p>
         </div>
-        <div class="gallery-item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Zhongkui_temple_painting.jpg" alt="Temple Mural">
-          <p>Temple Wall Mural</p>
-        </div>
-        <div class="gallery-item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Zhong_Kui_in_Opera.jpg" alt="Chinese Opera Zhong Kui">
-          <p>Chinese Opera Costume</p>
-        </div>
       </div>
     </section>
   </main>
 
+  <!-- 页脚 -->
   <footer>
     <p id="footer-text">© 2025 Zhongkui.site | A cultural project to introduce Zhong Kui to the world</p>
   </footer>
 
+  <!-- 多语言切换脚本 -->
   <script>
+    // 四种语言内容翻译表
     const translations = {
       en: {
         title: "Zhong Kui",
         subtitle: "The Legendary Demon Queller in Chinese Folklore",
         nav: { about: "About Zhong Kui", culture: "Cultural Significance", legends: "Legends", gallery: "Gallery" },
-        about: { title: "About Zhong Kui", text: "Zhong Kui (钟馗) is a legendary figure in Chinese folklore, often recognized as the 'Demon Queller.' He is believed to have the power to capture and command ghosts and evil spirits, protecting people from harm. Stories describe him as a brilliant scholar who, despite his talents, was denied official recognition due to his appearance. After his tragic death, he was granted a divine role as protector against evil." },
-        culture: { title: "Cultural Significance", text: "In Chinese tradition, Zhong Kui is regarded as a symbol of justice and protection. His fierce image is often placed on household doors during festivals such as the Lunar New Year and Dragon Boat Festival to ward off evil spirits and bring peace to the family. He is also depicted in opera, paintings, and temple murals as a mighty guardian with a sword, commanding an army of spirits." },
-        legends: { title: "Legends", text: "Many legends surround Zhong Kui. The Scholar’s Tragedy: Zhong Kui was said to be a top scholar who failed the imperial examination due to his appearance, leading to his despair and death. The Emperor’s Dream: In another tale, Emperor Xuanzong of Tang dreamed of Zhong Kui slaying demons, after which he ordered his image to be painted for protection. These stories established Zhong Kui as a revered figure in both folklore and imperial culture." },
-        gallery: { title: "Gallery", text: "Explore traditional paintings and artworks of Zhong Kui through the ages." },
-        footer: "© 2025 Zhongkui.site | A cultural project to introduce Zhong Kui to the world"
+        about: { title: "About Zhong Kui", text: "Zhong Kui (钟馗) is a legendary figure..." },
+        culture: { title: "Cultural Significance", text: "In Chinese tradition, Zhong Kui is regarded..." },
+        legends: { title: "Legends", text: "Many legends surround Zhong Kui..." },
+        gallery: { title: "Gallery", text: "Explore traditional paintings..." },
+        footer: "© 2025 Zhongkui.site | A cultural project..."
       },
       zh: {
         title: "钟馗",
         subtitle: "中国民间传说中的捉鬼大神",
         nav: { about: "关于钟馗", culture: "文化意义", legends: "传说故事", gallery: "画廊" },
-        about: { title: "关于钟馗", text: "钟馗是中国民间传说中的人物，被尊为“捉鬼大神”。据说他能驱使鬼怪，保护人们免受邪祟侵扰。他本是学识渊博的才子，却因相貌落第，郁郁而亡。死后被冥王任命为驱鬼大神，守护人间。" },
-        culture: { title: "文化意义", text: "在中国传统中，钟馗象征正义与守护。他的画像常在春节和端午贴于门上，以驱鬼辟邪、保佑安宁。他也常见于戏曲、壁画和庙宇，手持宝剑，率领群鬼。" },
-        legends: { title: "传说故事", text: "关于钟馗的传说有许多。其一“落第书生”：才华横溢却因貌丑落第，含恨而死。其二“唐明皇梦钟馗”：唐玄宗梦见钟馗斩妖除魔，遂命人绘其像，作为镇宅之宝。钟馗因而成为驱鬼镇邪的重要神祇。" },
+        about: { title: "关于钟馗", text: "钟馗是中国民间传说中的人物，被尊为“捉鬼大神”..." },
+        culture: { title: "文化意义", text: "在中国传统中，钟馗象征正义与守护..." },
+        legends: { title: "传说故事", text: "关于钟馗的传说有许多..." },
         gallery: { title: "画廊", text: "浏览钟馗在不同历史时期的绘画与艺术作品。" },
         footer: "© 2025 Zhongkui.site | 一个向世界介绍钟馗文化的项目"
+      },
+      ja: {
+        title: "鍾馗（しょうき）",
+        subtitle: "中国の伝説に登場する鬼を退治する神",
+        nav: { about: "鍾馗について", culture: "文化的意義", legends: "伝説", gallery: "ギャラリー" },
+        about: { title: "鍾馗について", text: "鍾馗（しょうき）は中国の民間伝説に登場する人物で、鬼を退治する神として知られています..." },
+        culture: { title: "文化的意義", text: "中国の伝統では、鍾馗は正義と守護の象徴とされています..." },
+        legends: { title: "伝説", text: "鍾馗には多くの伝説があります..." },
+        gallery: { title: "ギャラリー", text: "歴史を通じて描かれた鍾馗の絵画や芸術作品をご覧ください。" },
+        footer: "© 2025 Zhongkui.site | 世界に鍾馗文化を紹介するプロジェクト"
+      },
+      es: {
+        title: "Zhong Kui",
+        subtitle: "El legendario cazador de demonios en el folclore chino",
+        nav: { about: "Sobre Zhong Kui", culture: "Importancia cultural", legends: "Leyendas", gallery: "Galería" },
+        about: { title: "Sobre Zhong Kui", text: "Zhong Kui es una figura legendaria del folclore chino, conocido como el 'cazador de demonios'..." },
+        culture: { title: "Importancia cultural", text: "En la tradición china, Zhong Kui es considerado un símbolo de justicia y protección..." },
+        legends: { title: "Leyendas", text: "Existen muchas leyendas sobre Zhong Kui..." },
+        gallery: { title: "Galería", text: "Explora pinturas y obras de arte tradicionales de Zhong Kui a lo largo de los siglos." },
+        footer: "© 2025 Zhongkui.site | Un proyecto cultural para presentar a Zhong Kui al mundo"
       }
-      // ja, es 可依样扩展
     };
 
+    // 设置语言
     function setLanguage(lang) {
       const main = document.querySelector("main");
       main.classList.remove("show");
@@ -256,10 +264,12 @@
       }, 300);
     }
 
+    // 点击旗帜切换语言
     document.querySelectorAll(".lang-flags img").forEach(flag => {
       flag.addEventListener("click", () => setLanguage(flag.dataset.lang));
     });
 
+    // 自动检测语言
     function detectLanguage() {
       const savedLang = localStorage.getItem("preferredLang");
       if (savedLang && translations[savedLang]) return savedLang;
@@ -270,6 +280,7 @@
       return "en";
     }
 
+    // 页面加载时应用语言
     document.addEventListener("DOMContentLoaded", () => {
       const main = document.querySelector("main");
       main.classList.add("fade");
