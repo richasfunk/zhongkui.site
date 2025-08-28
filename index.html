@@ -193,47 +193,272 @@
   <script>
     // 四种语言内容翻译表
     const translations = {
-      en: {
-        title: "Zhong Kui",
-        subtitle: "The Legendary Demon Queller in Chinese Folklore",
-        nav: { about: "About Zhong Kui", culture: "Cultural Significance", legends: "Legends", gallery: "Gallery" },
-        about: { title: "About Zhong Kui", text: "Zhong Kui (钟馗) is a legendary figure..." },
-        culture: { title: "Cultural Significance", text: "In Chinese tradition, Zhong Kui is regarded..." },
-        legends: { title: "Legends", text: "Many legends surround Zhong Kui..." },
-        gallery: { title: "Gallery", text: "Explore traditional paintings..." },
-        footer: "© 2025 Zhongkui.site | A cultural project..."
-      },
-      zh: {
-        title: "钟馗",
-        subtitle: "中国民间传说中的捉鬼大神",
-        nav: { about: "关于钟馗", culture: "文化意义", legends: "传说故事", gallery: "画廊" },
-        about: { title: "关于钟馗", text: "钟馗是中国民间传说中的人物，被尊为“捉鬼大神”..." },
-        culture: { title: "文化意义", text: "在中国传统中，钟馗象征正义与守护..." },
-        legends: { title: "传说故事", text: "关于钟馗的传说有许多..." },
-        gallery: { title: "画廊", text: "浏览钟馗在不同历史时期的绘画与艺术作品。" },
-        footer: "© 2025 Zhongkui.site | 一个向世界介绍钟馗文化的项目"
-      },
-      ja: {
-        title: "鍾馗（しょうき）",
-        subtitle: "中国の伝説に登場する鬼を退治する神",
-        nav: { about: "鍾馗について", culture: "文化的意義", legends: "伝説", gallery: "ギャラリー" },
-        about: { title: "鍾馗について", text: "鍾馗（しょうき）は中国の民間伝説に登場する人物で、鬼を退治する神として知られています..." },
-        culture: { title: "文化的意義", text: "中国の伝統では、鍾馗は正義と守護の象徴とされています..." },
-        legends: { title: "伝説", text: "鍾馗には多くの伝説があります..." },
-        gallery: { title: "ギャラリー", text: "歴史を通じて描かれた鍾馗の絵画や芸術作品をご覧ください。" },
-        footer: "© 2025 Zhongkui.site | 世界に鍾馗文化を紹介するプロジェクト"
-      },
-      es: {
-        title: "Zhong Kui",
-        subtitle: "El legendario cazador de demonios en el folclore chino",
-        nav: { about: "Sobre Zhong Kui", culture: "Importancia cultural", legends: "Leyendas", gallery: "Galería" },
-        about: { title: "Sobre Zhong Kui", text: "Zhong Kui es una figura legendaria del folclore chino, conocido como el 'cazador de demonios'..." },
-        culture: { title: "Importancia cultural", text: "En la tradición china, Zhong Kui es considerado un símbolo de justicia y protección..." },
-        legends: { title: "Leyendas", text: "Existen muchas leyendas sobre Zhong Kui..." },
-        gallery: { title: "Galería", text: "Explora pinturas y obras de arte tradicionales de Zhong Kui a lo largo de los siglos." },
-        footer: "© 2025 Zhongkui.site | Un proyecto cultural para presentar a Zhong Kui al mundo"
-      }
-    };
+    en: {
+    title: "Zhong Kui",
+    subtitle: "The Legendary Demon Queller in Chinese Folklore",
+    nav: { 
+      about: "About Zhong Kui", 
+      culture: "Cultural Significance", 
+      legends: "Legends", 
+      gallery: "Gallery" 
+    },
+    about: { 
+      title: "About Zhong Kui", 
+      text: `Zhong Kui is a legendary figure in Chinese folklore, known as the "Demon Queller." 
+      According to traditional tales, he was born as a remarkably intelligent and diligent scholar. 
+      From a young age, he devoted himself to the study of Confucian classics and displayed extraordinary talent in poetry, literature, and the arts. 
+      Despite his brilliance, Zhong Kui was considered physically unattractive, with a grotesque appearance that stood in sharp contrast to his virtuous and heroic heart.
+
+      In the imperial examination, which was the highest academic test in ancient China and the gateway to official positions, Zhong Kui excelled in every aspect of the examination except for his external appearance. 
+      Although he answered all the questions perfectly, the examiners were so disturbed by his disfigured looks that they refused to grant him the top scholar’s title. 
+      Deeply humiliated and heartbroken, Zhong Kui took his own life, ending a promising life of scholarly achievement prematurely.
+
+      After his death, the Emperor of the Underworld, recognizing his talent and moral integrity, appointed him as the divine protector tasked with hunting and capturing evil spirits, demons, and malevolent ghosts. 
+      From that time onward, Zhong Kui became a symbolic guardian against evil, revered not only in folklore but also in religious and cultural practices throughout China.
+
+      Zhong Kui’s character embodies justice, righteousness, and the triumph of inner virtue over superficial appearances. 
+      He is often depicted with a fierce expression, bulging eyes, a long black beard, and wielding a sword in his hand. 
+      This terrifying yet noble image underscores his role as a protector and highlights the cultural belief that appearance does not define one’s value or moral standing.` 
+    },
+    culture: { 
+      title: "Cultural Significance", 
+      text: `In Chinese tradition, Zhong Kui holds a unique place as both a cultural icon and spiritual protector. 
+      His image is widely used during major festivals, particularly the Lunar New Year and the Dragon Boat Festival, when households place paintings or decorative portraits of Zhong Kui on their doors or walls to ward off evil spirits and invite good fortune. 
+      The tradition symbolizes the hope that justice will prevail and that all malevolent forces will be repelled from the home.
+
+      Beyond his role in folk religion, Zhong Kui’s figure is also prominent in Chinese performing arts, including opera, theater, and shadow puppetry. 
+      In traditional Peking Opera, Zhong Kui’s dramatic appearance, complete with vividly painted face and costume, brings his character to life. 
+      Actors portraying Zhong Kui perform martial arts routines that simulate fighting off demons, reinforcing the narrative of righteousness confronting evil.
+
+      In visual arts, Zhong Kui appears in numerous paintings, murals, and prints. 
+      Artists depict him in various heroic poses: sometimes leading a legion of captured demons, sometimes standing vigil over a household, and sometimes in dynamic battle scenes where he confronts fearsome spirits. 
+      These artworks not only serve as decorations but also carry moral and philosophical messages emphasizing virtue, courage, and justice.
+
+      Zhong Kui’s cultural significance extends beyond China’s borders. 
+      With the spread of Chinese communities around the world, his images have become emblematic of Chinese cultural identity, appearing in Chinatowns, temples, and cultural exhibitions globally. 
+      Through these representations, Zhong Kui not only protects against evil but also conveys the richness of Chinese folklore and moral philosophy.` 
+    },
+    legends: { 
+      title: "Legends", 
+      text: `Numerous legends surround Zhong Kui, each illustrating his intelligence, integrity, and supernatural powers.
+
+      The Scholar’s Tragedy: The most famous tale recounts Zhong Kui’s failure in the imperial examination. 
+      Despite mastering all scholarly subjects, his physical deformities led the examiners to deny him the top honors. 
+      Humiliated and resentful, Zhong Kui threw himself from the examination hall roof, ending his life in despair. 
+      This tragic story serves as a cautionary tale about societal prejudice and the injustice of judging talent by appearance.
+
+      The Emperor’s Dream: According to historical anecdotes, Emperor Xuanzong of the Tang dynasty once dreamed of a fierce scholar capturing demons with extraordinary skill and bravery. 
+      Upon awakening, the emperor commanded artists to paint Zhong Kui’s likeness and placed these portraits in the palace and city gates to ensure protection from evil spirits. 
+      This event not only reinforced Zhong Kui’s spiritual authority but also helped establish his enduring presence in Chinese culture.
+
+      The Banquet of Ghosts: Another legend tells of Zhong Kui’s role as a leader among spirits. 
+      It is said that Zhong Kui, armed with his sword and accompanied by a retinue of obedient demons, would organize celestial banquets for wandering spirits, ensuring that no malevolent entities would roam freely to harm humans. 
+      This narrative reflects the dual nature of Zhong Kui as both a protector and a moral enforcer, illustrating the balance of justice and order in the supernatural realm.
+
+      Cross-Cultural Tales: Over centuries, stories of Zhong Kui’s deeds have been adapted and incorporated into various Chinese regional folklore. 
+      In some coastal regions, he is believed to control the winds and waves, protecting fishermen and sailors from disaster. 
+      In northern regions, his image is placed in granaries and livestock pens to safeguard against disease and misfortune. 
+      These local legends demonstrate how Zhong Kui’s mythos has been woven into daily life, blending moral guidance with practical protection.` 
+    },
+    gallery: { 
+      title: "Gallery", 
+      text: `Zhong Kui’s image has inspired countless works of art across centuries. 
+      In traditional Chinese paintings, he is often portrayed in bold, dynamic brush strokes, emphasizing his fierce demeanor and commanding presence. 
+      Woodblock prints from the Ming and Qing dynasties vividly illustrate Zhong Kui leading captured demons, with intricate details depicting each spirit’s expression and posture.
+
+      Temple murals also celebrate Zhong Kui, with some depicting him in scenes of cosmic battle against evil forces, wielding swords and riding mythical beasts. 
+      In modern times, artists continue to reinterpret Zhong Kui, incorporating contemporary artistic styles such as digital illustration, animation, and even graphic novels. 
+      These artworks not only preserve traditional motifs but also introduce Zhong Kui to younger generations in engaging ways.
+
+      Through this visual legacy, viewers gain insight into the moral lessons, historical significance, and imaginative scope of Chinese folklore. 
+      The gallery is a testament to Zhong Kui’s enduring relevance as a cultural icon who bridges mythology, art, and moral philosophy.` 
+    },
+    footer: "© 2025 Zhongkui.site | A cultural project to introduce Zhong Kui to the world"
+  },
+  zh: {
+    title: "钟馗",
+    subtitle: "中国民间传说中的捉鬼大神",
+    nav: { 
+      about: "关于钟馗", 
+      culture: "文化意义", 
+      legends: "传说故事", 
+      gallery: "画廊" 
+    },
+    about: { 
+      title: "关于钟馗", 
+      text: "钟馗，是中国古代民间传说中最具代表性的捉鬼大神之一。自唐代以来，他的形象便深入人心，成为家喻户晓的驱魔守护神。关于钟馗的生平，虽无确凿的史书记载，但在文学作品、笔记小说、戏曲与绘画中却留下了大量的传说与描绘，逐渐勾勒出他独特而鲜明的文化形象。\n\n据传，钟馗本是陕西终南山人，自幼聪慧异常，饱读诗书，志向远大。他才思敏捷，文采斐然，立志通过科举考试入仕为官，以实现匡扶社稷、造福百姓的理想。然而，因其相貌奇丑，在科举殿试时被主考官拒绝录取。钟馗虽才学出众，却因外貌受辱，心怀不平，愤而以头触阶，血溅金銮，壮烈而亡。\n\n传说唐玄宗李隆基夜梦钟馗，见其怒目圆睁，手执宝剑，斩妖除魔，威风凛凛。梦醒之后，玄宗深感震撼，遂命宫廷画师吴道子依梦境形象绘制钟馗像，并将其悬挂于宫殿之中，以驱妖避邪。自此，钟馗之名广为流传，成为人们口耳相传、世代敬奉的护宅神明。\n\n钟馗的故事体现了古代社会对于“才学与容貌”的张力与矛盾，也反映了人们对“忠烈之魂化为守护神”的美好愿望。一个在现实中受尽不公待遇的书生，却在死后被赋予了超凡的神格，化身为为民除害、护佑苍生的大神，这本身便是一种民间文化的升华与精神的寄托。" 
+    },
+    culture: { 
+      title: "文化意义", 
+      text: "在中国传统文化中，钟馗不仅是一位神话传说人物，更是正义与守护的象征。他的形象广泛应用于节日、民俗与艺术之中，成为维系社会心理与家庭安全感的重要元素。\n\n首先，钟馗最为人熟知的功能，便是驱鬼辟邪。在春节、端午等节日，人们常常将钟馗像悬挂或张贴在门上。春节期间，人们贴春联、挂门神，而钟馗像往往作为“专司捉鬼之神”出现，用以镇宅避邪。端午节，因时令交替、瘟疫流行，人们更相信钟馗能以大神威，镇压不祥之气，保护一家安康。正因如此，钟馗与门神、福神并列，成为中国传统节日习俗中不可或缺的文化符号。\n\n其次，钟馗的形象在中国戏曲与绘画艺术中也占有一席之地。京剧、豫剧、越剧等剧种中，常有钟馗出场的戏目。他多以大花脸示人，面庞威猛，胡须浓密，眼神犀利，出场便气势逼人。无论是《钟馗嫁妹》还是《钟馗斩鬼》，观众都能从中感受到他嫉恶如仇、刚正不阿的性格特征。与此同时，历代画家也不断创作钟馗像。唐代吴道子开创了“钟馗捉鬼”题材的绘画传统，明清时期更是盛行，文人墨客以笔墨寄托心志，绘钟馗形象以自励或警示，表达他们心中的正气与豪情。\n\n再次，钟馗还被赋予“护佑科举与学子”的象征意义。由于他本为落第书生，其遭遇引发了文人群体的共鸣。许多士子在应试时，会供奉钟馗像，祈求他能驱逐不祥、保佑自己考试顺利。这种“文人崇拜”，使钟馗逐渐从单纯的捉鬼大神，扩展为文化圈层中维护公平、寄托希望的精神象征。\n\n可以说，钟馗不仅仅是“驱鬼大神”，更是民众心中对正义的呼唤、对安宁生活的向往。他的形象折射出中国文化中“以刚制邪、以正压歪”的价值观。" 
+    },
+    legends: { 
+      title: "传说故事", 
+      text: "钟馗的传说极为丰富，几乎涵盖了人生、冥界、帝王梦境、民间婚俗等多个层面。以下几则故事尤为著名：\n\n（一）落第书生 —— 钟馗天资聪颖，才华横溢，却因貌丑而被贬斥。殿试之时，主考官以“有辱朝廷颜面”为由，将他拒于功名之外。钟馗一腔热血，却遭此奇耻大辱，愤而自尽。死后，他的忠魂不散，冥王怜其冤屈，封其为“驱魔大神”，赐以宝剑，命其在人间镇压妖邪。这一故事揭示了社会不公与个人理想的冲突，也解释了钟馗为何成为“斩妖除魔”的神明。\n\n（二）唐明皇梦钟馗 —— 据《旧唐书》记载，唐玄宗李隆基一日大病，梦见宫中群妖作乱，祸害百姓。此时，一位衣冠不整、手执宝剑的巨人怒吼而出，奋力斩妖，将群魔驱逐殆尽。玄宗惊醒，记忆犹新，遂命吴道子依梦绘像，悬于寝宫，以求辟邪保安。此后，钟馗的形象迅速走入帝王与民间的信仰体系，成为驱鬼之神的典型。\n\n（三）钟馗嫁妹 —— 在一些地方戏曲与民间故事中，钟馗不仅是斩妖大神，还关心家人。据说他死后仍牵挂其妹妹婚事，担心妹妹受欺负，便化作阴间鬼王，主持婚礼，选贤良之士为妹夫。这则故事赋予钟馗更多的人性光辉，让人们看到他不仅是威猛的捉鬼神，更是有情有义的兄长。\n\n（四）钟馗游地府 —— 另有传说称，钟馗死后游历地府，与阎王结下深厚友谊，得阎王赐以鬼兵鬼将，听其调遣。从此，他带领群鬼在人间巡游，专门缉拿作祟之妖魔。这一传说让钟馗的“护佑”属性更加系统化，成为“阴阳之间的守护神”。\n\n这些故事交织在一起，构建出一个立体的钟馗形象。他既是为理想而殉的书生，又是帝王梦中的神将，既是护佑家人的兄长，也是统领阴兵的鬼王。这种多重身份，使钟馗成为极具魅力与文化张力的传奇人物。" 
+    },
+    gallery: { 
+      title: "画廊", 
+      text: "钟馗的形象，在艺术领域中占有极为重要的地位。唐代以来，钟馗像便成为画家们喜爱的题材。吴道子创下的“钟馗捉鬼图”，不仅奠定了钟馗的视觉原型，也为后世留下了“怒目圆睁、手执宝剑、黑须飘扬”的经典形象。\n\n明清时期，钟馗绘画更为盛行，尤其在文人画中别具一格。许多文人借画钟馗以寄托心志，用“钟馗捉鬼”来比喻自己心中对邪恶势力的抗争。例如，明代徐渭、清代任伯年等画家，都留下了极具个性的钟馗作品。钟馗画作往往不拘泥于形象之美，而重在表现精神气魄，甚至带有夸张与幽默的色彩，成为文人自抒胸臆的一种方式。\n\n在民间工艺中，钟馗像也常见于木版年画、剪纸、雕刻等形式。尤其在春节与端午，人们张贴钟馗门神，寄托“驱邪纳福”的美好愿望。京剧舞台上的钟馗，更以红黑相间的花脸、粗犷豪迈的唱腔，赢得观众喝彩。可以说，钟馗已经超越了单纯的神话角色，成为艺术创作与民俗活动的重要源泉。" 
+    },
+    footer: "© 2025 Zhongkui.site | 一个向世界介绍钟馗文化的项目"
+  },
+  ja: {
+  title: "鍾馗（しょうき）",
+  subtitle: "中国の伝説に登場する鬼を退治する神",
+  nav: { 
+    about: "鍾馗について", 
+    culture: "文化的意義", 
+    legends: "伝説", 
+    gallery: "ギャラリー" 
+  },
+  about: { 
+    title: "鍾馗について", 
+    text: `鍾馗（しょうき）は中国の民間伝説に登場する人物で、「鬼を退治する神」として知られています。  
+幼い頃から非常に聡明で勤勉な学者であり、儒教の古典を学び、詩歌や文学、芸術においても卓越した才能を発揮しました。  
+しかし、その外見は醜く、見た目によって学問の功績を認められなかったため、非常に悲しい運命を辿ります。
+
+古代中国の科挙制度において、鍾馗は全ての学問試験で優秀な成績を収めましたが、その醜い外見のために最高位の学者として認められませんでした。  
+深く恥辱を感じた鍾馗は自ら命を絶ち、優れた学者としての短い人生を終えました。
+
+死後、冥界の王はその才能と正義感を認め、鍾馗を鬼や邪悪な霊を捕らえる神として任命しました。  
+それ以来、鍾馗は邪悪から人々を守る象徴的な守護神となり、民間伝承や宗教的儀式において尊ばれています。
+
+鍾馗の人物像は、正義と倫理、そして外見より内面の価値が勝ることを象徴しています。  
+彼はしばしば険しい表情、大きな目、長い黒いひげを持ち、剣を手にして描かれます。  
+この勇ましい姿は守護者としての役割を強調し、人々に外見に惑わされず本質を見ることの大切さを教えています。`
+  },
+  culture: { 
+    title: "文化的意義", 
+    text: `中国の伝統文化において、鍾馗は文化的アイコンであると同時に、精神的な守護者として特別な存在です。  
+特に旧正月や端午節などの重要な祭りでは、家の門や壁に鍾馗の絵や装飾を掲げ、悪霊を追い払い、幸運を招く習慣があります。  
+これは、正義が勝ち、悪が家から遠ざけられることを象徴しています。
+
+民間信仰だけでなく、鍾馗の姿は中国の伝統芸能にも登場します。  
+京劇や影絵劇では、鍾馗の顔は鮮やかに描かれ、衣装も華やかで、役者は武術の演技で鬼を退治する場面を演じます。  
+これは正義が悪と戦う物語を視覚的かつ演劇的に表現しています。
+
+絵画や壁画では、鍾馗は捕らえた鬼の軍団を率いる姿、家を見守る姿、あるいは恐ろしい霊と戦う姿など、様々な英雄的ポーズで描かれています。  
+これらの作品は単なる装飾ではなく、道徳的、哲学的メッセージを含み、勇気や正義、徳の重要性を示しています。
+
+さらに、鍾馗の文化的意義は中国国外にも広がっています。  
+世界中の華人コミュニティでは、鍾馗の像が中国文化の象徴として寺院や文化展示に置かれ、邪悪から守るだけでなく、中国の民間伝承や倫理観を伝える役割を果たしています。`
+  },
+  legends: { 
+    title: "伝説", 
+    text: `鍾馗には多くの伝説があり、いずれも彼の知恵、正義感、超自然的な力を描いています。
+
+学者の悲劇：最も有名な伝説では、鍾馗は科挙で全ての試験に合格するほどの才知を持ちながら、醜い外見のために最高位の学者として認められませんでした。  
+屈辱と絶望の中、彼は試験会場の屋根から身を投げ、自らの命を絶ちました。  
+この悲劇は、社会的偏見と外見による不当な評価への警告として語り継がれています。
+
+皇帝の夢：唐の玄宗皇帝は、ある夜、鍾馗が鬼を捕らえる夢を見ました。  
+目覚めた皇帝は、宮廷画家に鍾馗の姿を描かせ、宮殿や城門に掲げることで悪霊から守るよう命じました。  
+この出来事により、鍾馗の霊的権威が確立し、中国文化における彼の存在感が永続しました。
+
+幽霊の宴：別の伝説では、鍾馗は鬼のリーダーとして、従順な鬼たちと共に幽霊のための宴を催し、邪悪な存在が人間を害さないようにしたといわれています。  
+この物語は、守護者であり道徳的な秩序を維持する者としての鍾馗の二面性を示しています。
+
+地域伝承：沿岸地域では、鍾馗は風や波を支配し、漁師や船乗りを災難から守ると信じられています。  
+北部地域では、穀物倉庫や家畜小屋に鍾馗の像を置き、病気や不幸から守ります。  
+これらの地域伝承は、鍾馗の神話が日常生活に溶け込み、道徳的教訓と実際の保護が融合していることを示しています。`
+  },
+  gallery: { 
+    title: "ギャラリー", 
+    text: `鍾馗の姿は、長い歴史を通じて数多くの芸術作品に影響を与えています。  
+伝統的な中国絵画では、力強く躍動感のある筆使いで、鍾馗の凛々しい姿と威厳ある存在感を表現しています。  
+明・清時代の木版画では、捕らえた鬼の群れを率いる鍾馗の姿が詳細に描かれ、鬼一体一体の表情や姿勢も丁寧に表現されています。
+
+寺院の壁画でも鍾馗が描かれ、宇宙的な悪との戦いの場面で剣を振るい、神獣に乗る姿が見られます。  
+現代では、デジタルイラストやアニメーション、グラフィックノベルなど、新しいスタイルで再解釈され、若い世代にも鍾馗の伝説を伝えています。
+
+この視覚的遺産を通じて、観る者は中国の民間伝承の道徳的教訓、歴史的意義、そして想像力の広がりを知ることができます。  
+ギャラリーは、神話、芸術、道徳哲学を結ぶ文化的アイコンとしての鍾馗の永続的な重要性を示しています。`
+  },
+  footer: "© 2025 Zhongkui.site | 世界に鍾馗文化を紹介するプロジェクト"
+},
+
+  es: {
+  title: "Zhong Kui",
+  subtitle: "El legendario cazador de demonios en el folclore chino",
+  nav: { 
+    about: "Sobre Zhong Kui", 
+    culture: "Importancia cultural", 
+    legends: "Leyendas", 
+    gallery: "Galería" 
+  },
+  about: { 
+    title: "Sobre Zhong Kui", 
+    text: `Zhong Kui es una figura legendaria del folclore chino, conocido como el "Cazador de Demonios".  
+Desde temprana edad, se destacó como un estudioso extremadamente inteligente y dedicado, estudiando los clásicos confucianos y demostrando un talento excepcional en poesía, literatura y artes.  
+A pesar de su brillantez, su apariencia física era poco atractiva, lo que le impidió recibir reconocimiento oficial durante su vida.
+
+En el sistema de exámenes imperiales, que era la máxima prueba académica en la antigua China y la puerta de entrada a cargos oficiales, Zhong Kui sobresalió en todos los aspectos académicos, pero los examinadores, perturbados por su aspecto desfigurado, se negaron a otorgarle el título de máximo erudito.  
+Profundamente humillado y desilusionado, Zhong Kui se quitó la vida, poniendo fin prematuramente a una prometedora carrera académica.
+
+Tras su muerte, el Emperador del Inframundo reconoció su talento e integridad moral y lo designó como protector divino encargado de cazar y capturar espíritus malignos, demonios y fantasmas malévolos.  
+Desde entonces, Zhong Kui se convirtió en un símbolo de protección contra el mal, venerado no solo en el folclore sino también en prácticas religiosas y culturales en toda China.
+
+El carácter de Zhong Kui encarna la justicia, la rectitud y el triunfo de la virtud interna sobre las apariencias externas.  
+Se le representa a menudo con una expresión feroz, ojos saltones, larga barba negra y portando una espada.  
+Esta imagen aterradora pero noble resalta su papel como protector y subraya la creencia cultural de que la apariencia no determina el valor o la moral de una persona.`
+  },
+  culture: { 
+    title: "Importancia cultural", 
+    text: `En la tradición china, Zhong Kui ocupa un lugar único como icono cultural y protector espiritual.  
+Su imagen se utiliza ampliamente durante los principales festivales, especialmente el Año Nuevo Lunar y el Festival del Bote del Dragón, cuando los hogares colocan pinturas o retratos decorativos de Zhong Kui en puertas o paredes para alejar a los espíritus malignos e invitar a la buena fortuna.  
+Esta tradición simboliza la esperanza de que la justicia prevalezca y que todas las fuerzas malévolas sean repelidas del hogar.
+
+Más allá de su papel en la religión popular, la figura de Zhong Kui también es prominente en las artes escénicas chinas, incluyendo la ópera, el teatro y el títere de sombra.  
+En la Ópera de Pekín tradicional, la apariencia dramática de Zhong Kui, con rostro pintado vívidamente y vestuario elaborado, da vida a su carácter.  
+Los actores que interpretan a Zhong Kui realizan rutinas de artes marciales que simulan la lucha contra demonios, reforzando la narrativa de la justicia enfrentándose al mal.
+
+En las artes visuales, Zhong Kui aparece en numerosas pinturas, murales e impresiones.  
+Los artistas lo representan en diversas poses heroicas: a veces liderando un ejército de demonios capturados, a veces vigilando un hogar, y a veces en escenas de batalla dinámicas enfrentándose a espíritus temibles.  
+Estas obras no solo sirven como decoración, sino que también transmiten mensajes morales y filosóficos que enfatizan la virtud, el coraje y la justicia.
+
+La importancia cultural de Zhong Kui se extiende más allá de las fronteras de China.  
+Con la expansión de las comunidades chinas alrededor del mundo, sus imágenes se han convertido en emblemas de identidad cultural, apareciendo en barrios chinos, templos y exposiciones culturales globalmente.  
+A través de estas representaciones, Zhong Kui no solo protege contra el mal, sino que también transmite la riqueza del folclore chino y su filosofía moral.`
+  },
+  legends: { 
+    title: "Leyendas", 
+    text: `Numerosas leyendas rodean a Zhong Kui, cada una ilustrando su inteligencia, integridad y poderes sobrenaturales.
+
+La tragedia del erudito: La historia más famosa relata el fracaso de Zhong Kui en el examen imperial.  
+A pesar de dominar todas las materias académicas, sus deformidades físicas llevaron a los examinadores a negarle los máximos honores.  
+Humillado y resentido, Zhong Kui se arrojó desde el tejado de la sala de examen, terminando con su vida en la desesperación.  
+Esta historia trágica sirve como advertencia sobre los prejuicios sociales y la injusticia de juzgar el talento por la apariencia.
+
+El sueño del emperador: Según anécdotas históricas, el emperador Xuanzong de la dinastía Tang soñó una vez con un feroz erudito capturando demonios con extraordinaria habilidad y valentía.  
+Al despertar, el emperador ordenó a los artistas pintar la imagen de Zhong Kui y colocar estos retratos en el palacio y en las puertas de la ciudad para garantizar protección contra los espíritus malignos.  
+Este evento reforzó la autoridad espiritual de Zhong Kui y ayudó a establecer su presencia duradera en la cultura china.
+
+El banquete de los fantasmas: Otra leyenda cuenta el papel de Zhong Kui como líder entre los espíritus.  
+Se dice que Zhong Kui, armado con su espada y acompañado de un séquito de demonios obedientes, organizaba banquetes celestiales para los espíritus errantes, asegurando que ninguna entidad malévola vagara libremente para dañar a los humanos.  
+Esta narrativa refleja la doble naturaleza de Zhong Kui como protector y ejecutor moral, ilustrando el equilibrio de justicia y orden en el reino sobrenatural.
+
+Historias regionales: A lo largo de los siglos, las historias de los hechos de Zhong Kui se han adaptado e incorporado al folclore regional chino.  
+En algunas regiones costeras, se cree que controla el viento y las olas, protegiendo a pescadores y marineros de desastres.  
+En regiones del norte, su imagen se coloca en graneros y corrales de ganado para protegerlos de enfermedades y desgracias.  
+Estas leyendas locales muestran cómo el mito de Zhong Kui se ha entrelazado con la vida diaria, mezclando guía moral con protección práctica.`
+  },
+  gallery: { 
+    title: "Galería", 
+    text: `La imagen de Zhong Kui ha inspirado innumerables obras de arte a lo largo de los siglos.  
+En pinturas tradicionales chinas, a menudo se le representa con trazos audaces y dinámicos, enfatizando su semblante feroz y su presencia imponente.  
+Las impresiones xilográficas de las dinastías Ming y Qing ilustran vívidamente a Zhong Kui liderando demonios capturados, con detalles intrincados que muestran la expresión y postura de cada espíritu.
+
+Los murales de templos también celebran a Zhong Kui, representándolo en escenas de batalla cósmica contra fuerzas malignas, blandiendo espadas y montando bestias míticas.  
+En tiempos modernos, los artistas continúan reinterpretando a Zhong Kui, incorporando estilos contemporáneos como ilustración digital, animación e incluso novelas gráficas.  
+Estas obras no solo preservan los motivos tradicionales, sino que también presentan a Zhong Kui a las generaciones más jóvenes de manera atractiva.
+
+A través de este legado visual, los espectadores adquieren una visión de las lecciones morales, la importancia histórica y la amplitud imaginativa del folclore chino.  
+La galería es un testimonio de la relevancia perdurable de Zhong Kui como ícono cultural que une mitología, arte y filosofía moral.`
+  },
+  footer: "© 2025 Zhongkui.site | Un proyecto cultural para presentar a Zhong Kui al mundo"
+}
+};
+
 
     // 设置语言
     function setLanguage(lang) {
